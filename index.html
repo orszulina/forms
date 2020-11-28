@@ -19,45 +19,58 @@
 
 <main> 
     <div class="logo"><img src="./img/cslogo.jpg" alt="company logo"></div>
-
-    <div class="btns">
-        <button class="btn highlighted">Matter submission</button>
-        <button class="btn disabled">Save changes</button>
-    </div>
-
-    <h1>Matter submission</h1>
-
-    <section id="form">
+    
+    <form id="form-main">
+        <div class="btns">
+            <button class="btn submit" form="form-main">Matter submission</button>
+            <button class="btn save" form="form-main">Save changes</button>
+        </div>
+        <h1>Matter submission</h1>
+        <div id="form">
         <div class="form inp1">
-            <p>Lorem ipsum</p>
-            <input type="text">
+            <label for="input1">Lorem ipsum</label>
+            <input type="text" id="input1">
         </div>
         <div class="form inp2">
-            <p>Lorem ipsum*</p>
-            <input type="text" name="Type Name, Surname" required>
+            <label for="input2">Lorem ipsum*</label>
+            <input type="text" name="name, surname" id="input2" autocomplete="name" required>
         </div>
         <div class="form inp3">
-            <p>Lorem ipsum</p>
-            <input type="text">
+            <label for="input3">Lorem ipsum</label>
+            <input type="text" id="input3">
         </div>
         <div class="form inp4">
-            <p>Lorem ipsum</p>
-            <input type="text">
+            <label for="input4">Lorem ipsum</label>
+            <input type="text" id="input4">
         </div>
-        <div class="form inp-select">
-            <p>Lorem ipsum</p>
-            <input type="text" name="Select">
+        
+        <form id="form-select">
+            <div class="form inp-select">
+                <label for="select">Lorem ipsum</label>
+                <input type="text" name="select" id="select"><button class="btn select" form="form-select">Select</Select></button>
+            </div>
+        </form>
+
+            <div class="form inp5">
+                <label for="input5">Lorem ipsum</label>
+                <input type="text" name="name, surname" id="input5" autocomplete="name">
+            </div>
+            <div class="form inp5">
+                <label for="input5">Lorem ipsum</label>
+                <input type="text" id="input5">
+            </div>
         </div>
-        <div><button class="btn select">Select</Select></button></div>
 
 
+    <div class="attachments">
+        <p class="att-title">Attachments</p>
+        <button class="btn att">View files</button>
+        <button class="btn att">Upload attachments</button>
+        <p class="description">Please drag and drop files to the folder and press Upload attachment to attach the files</p>
+    </div>
 
-
-
-
-    </section>
-
-
+    </form>
+</main>
 
 
 
