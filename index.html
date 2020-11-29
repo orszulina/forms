@@ -49,7 +49,7 @@
         <div class="form__input-medium">
             <form id="form-select">
                 <label for="select">Lorem ipsum</label>
-                <input type="text" name="select" id="select"><button class="btn select" form="form-select" type="button"><a href="./popup.html"></a>Select</Select></button>
+                <input type="text" name="select" id="select"><a href="./popup.html"><button class="btn select" form="form-select" type="button">Select</Select></button></a>
             </form>
             </div>
             <div class="form__input-short">
@@ -65,8 +65,8 @@
 
     <div class="attachments">
         <p class="att-title">Attachments</p>
-        <button class="btn att">View files</button>
-        <button class="btn att">Upload attachments</button>
+        <button class="btn att" form="none">View files</button>
+        <button class="btn att" form="none">Upload attachments</button>
         <p class="description">Please drag and drop files to the folder and press Upload attachment to attach the files</p>
     </div>
 
@@ -128,13 +128,15 @@
         <form id="ta-long">
             <label for="textarea-long">Lorem ipsum</label>
             <textarea id="textarea-long" name="comment" type="text" placeholder="Type your comment..."></textarea>
-            <button form="ta-long">Submit comment</button>
+            <div class="button-box">
+                <button form="ta-long">Submit comment</button>
+            </div>
         </form>
     </div>
 
     <div class="buttons">
-        <button class="btn-submission white">Cancel</button>
-        <button class="btn-submission black">Save</button>
+        <button class="btn-submission white" form="none">Cancel</button>
+        <button class="btn-submission black" form="none">Save</button>
         <button class="btn-submission black" type="submit" form="form-main">Submit</button>
     </div>
 
@@ -142,7 +144,7 @@
         <form id="ta-short">
             <label for="textarea-short">Lorem ipsum</label>
             <textarea id="textarea-short" name="comment" type="text" placeholder="Lorem ipsum"></textarea>
-            <button form="ta-short">Lorem ipsum</button>
+            <button form="ta-short">Lorem ipsum</button>            
         </form>
     </div>
 
