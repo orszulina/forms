@@ -95,26 +95,20 @@ img {
 }
 
 #form {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 0px 20px;
 }
 
 h1 {
   margin-top: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 35px;
   font-size: 30px;
-}
-
-label {
-  font-size: 14px;
-  color: #000000;
-  font-weight: bold;
-  margin-bottom: 15px;
-  display: inline-block;
 }
 
 .form {
@@ -130,28 +124,31 @@ input {
   font-size: 16px;
 }
 
-.inp1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
+.form__input-long {
+  width: 100%;
 }
 
-.inp4 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
+.form__input-short {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.inp-select {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
+.form__input-short .short {
+  width: 48%;
+}
+
+.form__input-medium {
   width: 75%;
 }
 
-.inp-select button {
+.form__input-medium button {
   position: absolute;
   height: 46px;
+  width: 100px;
   color: #fff;
   background-color: #000000;
 }
@@ -166,15 +163,27 @@ input:focus {
   color: black;
 }
 
-.inp5 {
-  width: 100%;
-}
-
-.attachments .att-title {
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
   font-size: 14px;
   color: #000000;
   font-weight: bold;
+  margin-top: 45px;
+}
+
+.attachments {
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.attachments .att-title {
   margin-bottom: 15px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
 }
 
 .attachments .att {
@@ -187,5 +196,178 @@ input:focus {
   margin-top: 15px;
   font-size: 14px;
   color: #7c7c7b;
+}
+
+.attachments button {
+  width: 170px;
+}
+
+.checkboxx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.checkboxx .checkbox:disabled {
+  background-color: #ffffff;
+  border-color: #dadada;
+}
+
+.checkboxx .check-title {
+  margin: 15px;
+}
+
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.check .checkbox {
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.check input:checked {
+  color: #b61313;
+  border: 2px solid yellow;
+}
+
+.ta-long {
+  width: 75%;
+  margin-bottom: 60px;
+}
+
+.ta-long textarea {
+  min-height: 70px;
+  max-height: 131px;
+  min-width: 100%;
+  max-width: 100%;
+  border: 1px solid #a8a8a7;
+  color: #a8a8a7;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.ta-long textarea[type=text] {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 4px;
+  padding-top: 15px;
+  color: #000000;
+}
+
+.ta-long button {
+  color: #fff;
+  background-color: #000000;
+  position: relative;
+  height: 40px;
+  width: 150px;
+  left: 72%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.buttons .btn-submission {
+  height: 40px;
+  width: 150px;
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.buttons .black {
+  color: #fff;
+  background-color: #000000;
+}
+
+.buttons .white {
+  background-color: #ffffff;
+}
+
+.ta-short {
+  width: 75%;
+  margin-bottom: 60px;
+}
+
+.ta-short textarea {
+  min-height: 70px;
+  max-height: 70px;
+  min-width: 100%;
+  max-width: 100%;
+  border: 1px solid #a8a8a7;
+  color: #a8a8a7;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.ta-short textarea[type=text] {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 4px;
+  padding-top: 15px;
+  color: #000000;
+}
+
+.ta-short textarea::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+.ta-short textarea::-webkit-scrollbar {
+  width: 15px;
+  background-color: #ffffff;
+}
+
+.ta-short textarea::-webkit-scrollbar-thumb {
+  background-color: #7c7c7b;
+}
+
+.ta-short button {
+  color: #fff;
+  background-color: #000000;
+  position: relative;
+  height: 40px;
+  width: 150px;
+  margin-top: 15px;
+  margin-bottom: 90px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+datalist {
+  background-color: #ffffff;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */

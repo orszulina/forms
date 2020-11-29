@@ -22,45 +22,46 @@
     
     <form id="form-main">
         <div class="btns">
-            <button class="btn submit" form="form-main">Matter submission</button>
-            <button class="btn save" form="form-main">Save changes</button>
+            <button class="btn submit" form="form-main" type="submit">Matter submission</button>
+            <button class="btn save" form="form-main" type="button">Save changes</button>
         </div>
         <h1>Matter submission</h1>
         <div id="form">
-        <div class="form inp1">
+        <div class="form__input-long">
             <label for="input1">Lorem ipsum</label>
             <input type="text" id="input1">
         </div>
-        <div class="form inp2">
-            <label for="input2">Lorem ipsum*</label>
-            <input type="text" name="name, surname" id="input2" autocomplete="name" required>
+        <div class="form__input-short">
+            <div class="short">
+                <label for="input2">Lorem ipsum*</label>
+                <input type="text" name="name, surname" id="input2" autocomplete="name" required>
+            </div>
+            <div class="short">
+                <label for="input3">Lorem ipsum</label>
+                <input type="text" id="input3">
+            </div>
         </div>
-        <div class="form inp3">
-            <label for="input3">Lorem ipsum</label>
-            <input type="text" id="input3">
-        </div>
-        <div class="form inp4">
+        <div class="form__input-short2">
             <label for="input4">Lorem ipsum</label>
             <input type="text" id="input4">
         </div>
         
-        <form id="form-select">
-            <div class="form inp-select">
+        <div class="form__input-medium">
+            <form id="form-select">
                 <label for="select">Lorem ipsum</label>
-                <input type="text" name="select" id="select"><button class="btn select" form="form-select">Select</Select></button>
+                <input type="text" name="select" id="select"><button class="btn select" form="form-select" type="submit">Select</Select></button>
+            </form>
             </div>
-        </form>
-
-            <div class="form inp5">
-                <label for="input5">Lorem ipsum</label>
-                <input type="text" name="name, surname" id="input5" autocomplete="name">
+            <div class="form__input-short">
+                <div class="short">
+                    <label for="input6">Lorem ipsum</label>
+                    <input type="text" name="name, surname" id="input6" autocomplete="name">
+                </div>
+                <div class="short">
+                    <label for="input7">Lorem ipsum</label>
+                    <input type="text" id="input7">
+                </div>
             </div>
-            <div class="form inp5">
-                <label for="input5">Lorem ipsum</label>
-                <input type="text" id="input5">
-            </div>
-        </div>
-
 
     <div class="attachments">
         <p class="att-title">Attachments</p>
@@ -69,9 +70,91 @@
         <p class="description">Please drag and drop files to the folder and press Upload attachment to attach the files</p>
     </div>
 
-    </form>
+    <div class="form__input-short">
+        <div class="short">
+            <label for="input5">Lorem ipsum</label>
+            <input type="text" name="drop" id="input5" list="droplist__one">
+        </div>
+        <div class="short">
+            <label for="input5">Lorem ipsum</label>
+            <input type="text" id="input5" name="drop" list="droplist__two">
+        </div>
+    </div>
+
+    <div class="form__input-short">
+        <div class="short">
+        <label for="input5">Lorem ipsum</label>
+        <input type="date" id="input5">
+        </div>
+    </div>
+
+    <datalist id="droplist__one">
+        <option value="Lorem">
+        <option value="Lorem">
+        <option value="Lorem">
+        <option value="Lorem">
+    </datalist>
+    
+    <datalist id="droplist__two">
+        <option value="Lorem">
+        <option value="Lorem">
+        <option value="Lorem">
+        <option value="Lorem">
+        <option value="Lorem">
+        <option value="Lorem">
+    </datalist>
+    
+    <div class="checkboxx">
+        <div class="check">
+            <label for="checkbox" class="check-title">Lorem ipsum</label>
+            <input id="checkbox" class="checkbox" type="checkbox">
+        </div>
+        <div class="check">
+            <label for="checkbox" class="check-title">Lorem ipsum</label>
+            <input id="checkbox" class="checkbox" type="checkbox">
+        </div>
+        <div class="check">
+            <label for="checkbox" class="check-title">Lorem ipsum</label>
+            <input id="checkbox" class="checkbox" type="checkbox">
+        </div>
+        <div class="check">
+            <label for="checkbox" class="check-title">Lorem ipsum</label>
+            <input id="checkbox" class="checkbox" type="checkbox">
+        </div>
+    </div>
+
+    <div class="ta-long">
+        <form id="ta-long">
+            <label for="textarea-long">Lorem ipsum</label>
+            <textarea id="textarea-long" name="comment" type="text" placeholder="Type your comment..."></textarea>
+            <button form="ta-long">Submit comment</button>
+        </form>
+    </div>
+
+    <div class="buttons">
+        <button class="btn-submission white">Cancel</button>
+        <button class="btn-submission black">Save</button>
+        <button class="btn-submission black">Submit</button>
+    </div>
+
+    <div class="ta-short">
+        <form id="ta-short">
+            <label for="textarea-short">Lorem ipsum</label>
+            <textarea id="textarea-short" name="comment" type="text" placeholder="Lorem ipsum"></textarea>
+            <button form="ta-short">Lorem ipsum</button>
+        </form>
+    </div>
+
+    
+</div>
+</form>
 </main>
 
+<footer>
+
+
+
+</footer>
 
 
 
