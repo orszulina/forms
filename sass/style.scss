@@ -152,6 +152,11 @@ input:focus {
     color: black;
 }
 
+input:invalid + label {
+    border: 1px solid #d91e19;
+    color: #d91e19;
+}
+
 label {
     display: flex;
     @include subtitle;
@@ -250,16 +255,19 @@ label {
     textarea::-webkit-scrollbar-thumb {
         background-color: #7c7c7b;
     }
-    button {
-        @include blackBtn;
-        position: relative;
-        height: 40px;
-        width: 150px;
-        left: 72%;
-        align-items: flex-end;
-        border: 1px solid black;    
-        font-size: 14px;
-        font-weight: bold;
+    .button-box {
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+    
+        button {
+            @include blackBtn;
+            height: 40px;
+            width: 150px;
+            border: 1px solid black;    
+            font-size: 14px;
+            font-weight: bold;
+        }
     }
 }
 // BUTTONS
@@ -328,7 +336,6 @@ label {
         width: 150px;
         margin-top: 15px;
         margin-bottom: 90px;
-        align-items: flex-end;
         border: 1px solid black;    
         font-size: 14px;
         font-weight: bold;
@@ -337,8 +344,6 @@ label {
 // DATALIST
 datalist {
     appearance: none;
-    background-color: #ffffff;
-    border: 1px solid black;
 }
 
 
@@ -360,7 +365,7 @@ footer {
             padding-right: 30px;
         }
     }
-    
+
     .footer-bottom {
         display: flex;
         flex-direction: column;
@@ -380,6 +385,46 @@ footer {
         background-color: #ffffff;
     }
 
+}
+
+.popup {    
+    height: 50vh;
+    width: 100%;
+    margin: 30px;
+    background-color: #ffffff;
+    .subtitle {
+        margin-top: 60px;
+    }
+    .popup-boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .select-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 30px 120px 0;
+        .check {
+            label {
+                margin: 15px auto;
+            }
+        }
+
+        button {
+        position: relative;
+        height: 40px;
+        width: 170px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        align-items: flex-end;
+        border: 1px solid black;    
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #fff;
+        }
+    }
 }
 
 

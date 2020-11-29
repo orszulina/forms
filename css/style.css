@@ -163,6 +163,11 @@ input:focus {
   color: black;
 }
 
+input:invalid + label {
+  border: 1px solid #d91e19;
+  color: #d91e19;
+}
+
 label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,16 +294,21 @@ label {
   background-color: #7c7c7b;
 }
 
-.ta-long button {
+.ta-long .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ta-long .button-box button {
   color: #fff;
   background-color: #000000;
-  position: relative;
   height: 40px;
   width: 150px;
-  left: 72%;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   border: 1px solid black;
   font-size: 14px;
   font-weight: bold;
@@ -377,9 +387,6 @@ label {
   width: 150px;
   margin-top: 15px;
   margin-bottom: 90px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   border: 1px solid black;
   font-size: 14px;
   font-weight: bold;
@@ -389,8 +396,6 @@ datalist {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #ffffff;
-  border: 1px solid black;
 }
 
 footer {
@@ -438,5 +443,61 @@ footer hr {
   height: 1px;
   border: 0;
   background-color: #ffffff;
+}
+
+.popup {
+  height: 50vh;
+  width: 100%;
+  margin: 30px;
+  background-color: #ffffff;
+}
+
+.popup .subtitle {
+  margin-top: 60px;
+}
+
+.popup .popup-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popup .select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 30px 120px 0;
+}
+
+.popup .select-box .check label {
+  margin: 15px auto;
+}
+
+.popup .select-box button {
+  position: relative;
+  height: 40px;
+  width: 170px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
