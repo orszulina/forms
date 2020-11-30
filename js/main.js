@@ -18,13 +18,3 @@ window.addEventListener('click', function(event){
         popup.style.display = "none";
       }
 });
-
-// const selectAll = document.querySelector('selectall');
-
-// const btnSelectAll = document.querySelectorAll('.selectall');
-
-// const check = document.querySelectorAll('.checkbox');
-
-// btnSelectAll.addEventListener('click', function(){
-//     check.addClass.checked;
-// });
