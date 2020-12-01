@@ -165,9 +165,11 @@ input:focus {
     color: black;
 }
 
-input:invalid+label {
-    border: 1px solid #d91e19;
-    color: #d91e19;
+input[type=checkbox]:disabled {
+    // background-color: #ffffff;
+    // appearance: none;
+    border-color: #a8a8a7;
+    color: #a8a8a7;
 }
 
 label {
@@ -212,15 +214,13 @@ label {
     margin-top: 45px;
     margin-bottom: 45px;
 
-    .checkbox:disabled {
-        background-color: #ffffff;
-        border-color: #dadada;
-    }
+    
 
     .check-title {
         margin: 15px;
     }
 }
+
 
 .check {
     display: flex;
@@ -470,6 +470,18 @@ footer {
             font-size: 1.4rem;
             font-weight: bold;
             background-color: #fff;
+        }
+    }
+    .popup-buttonbox {
+        display: flex;
+        justify-content: flex-end;
+
+        .popup-ok {
+            @include blackBtn;
+            align-self: flex-end;
+            height: 40px;
+            width: 170px;
+            border: none;
         }
     }
 }
