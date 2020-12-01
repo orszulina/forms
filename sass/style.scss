@@ -236,10 +236,18 @@ label {
         border-radius: 0;
         appearance: none;
     }
-
+    
     .checkbox:checked {
-        border: 1px solid #000000;
         background-color: #000000;
+    }
+
+    .checkbox:checked:after {
+        content: '\2714';
+        position: relative;
+        top: 0px;
+        left: 7px;
+        font-size: 2rem;
+        color: #fff;
     }
 }
 
