@@ -161,7 +161,12 @@ input {
 
 input[type=text] {
   padding-left: 10px;
+  padding-right: 10px;
   line-height: 46px;
+}
+
+input[type=date] {
+  padding: 15px;
 }
 
 input:focus {
@@ -185,7 +190,7 @@ label {
   margin-top: 45px;
 }
 
-#input5 {
+#input5, #input6 {
   padding: 15px;
 }
 
