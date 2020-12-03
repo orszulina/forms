@@ -14,7 +14,9 @@
         <div class="header">
             <div class="head__bar">
                 <a href="#" class="head__icon"><i class="fas fa-home"></i></a>
-                <a href="#"><p class="head__p">Home</p></a>
+                <a href="#">
+                    <p class="head__p">Home</p>
+                </a>
             </div>
         </div>
     </header>
@@ -68,7 +70,7 @@
 
                 <div class="attachments">
                     <p class="att-title">Attachments</p>
-                    <button class="btn att" form="none">View files</button>
+                    <button class="btn att" type="file" form="none">View files</button>
                     <button class="btn att" form="none">Upload attachments</button>
                     <p class="description">Please drag and drop files to the folder and press Upload attachment to
                         attach the files</p>
@@ -88,7 +90,7 @@
                 <div class="form__input--short">
                     <div class="short">
                         <label for="input5">Lorem ipsum</label>
-                        <input type="date" id="input5">
+                        <input type="date" id="input-date">
                     </div>
                 </div>
 
@@ -110,20 +112,20 @@
 
                 <div class="checkboxes">
                     <div class="check">
-                        <label for="checkbox1" class="check-title">Lorem ipsum</label>
-                        <input id="checkbox1" class="checkbox" type="checkbox">
+                        <label for="main-checkbox1" class="check-title">Lorem ipsum</label>
+                        <input id="main-checkbox1" class="checkbox" type="checkbox">
                     </div>
                     <div class="check">
-                        <label for="checkbox2" class="check-title">Lorem ipsum</label>
-                        <input id="checkbox2" class="checkbox" type="checkbox">
+                        <label for="main-checkbox2" class="check-title">Lorem ipsum</label>
+                        <input id="main-checkbox2" class="checkbox" type="checkbox">
                     </div>
                     <div class="check">
-                        <label for="checkbox3" class="check-title">Lorem ipsum</label>
-                        <input id="checkbox3" class="checkbox" type="checkbox">
+                        <label for="main-checkbox3" class="check-title">Lorem ipsum</label>
+                        <input id="main-checkbox3" class="checkbox" type="checkbox">
                     </div>
                     <div class="check">
-                        <label for="checkbox4" class="check-title">Lorem ipsum</label>
-                        <input id="checkbox4" class="checkbox" type="checkbox">
+                        <label for="main-checkbox4" class="check-title">Lorem ipsum</label>
+                        <input id="main-checkbox4" class="checkbox" type="checkbox">
                     </div>
                 </div>
 
@@ -152,7 +154,7 @@
                         <button form="ta-short">Lorem ipsum</button>
                     </form>
                 </div>
-
+<!-- POPUP  -->
                 <div id="select-popup" class="select-popup">
                     <div class="popup-content">
                         <div class="close-box">
@@ -168,15 +170,15 @@
                                     <p class="subtitle">Lorem</p>
                                     <button class="selectall" type="button">Select all</button>
                                     <div class="check">
-                                        <input id="checkbox1" class="checkbox" type="checkbox">
+                                        <input id="checkbox1" class="checkbox one" type="checkbox" disabled>
                                         <label for="checkbox1" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox2" class="checkbox" type="checkbox">
+                                        <input id="checkbox2" class="checkbox one" type="checkbox">
                                         <label for="checkbox2" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox3" class="checkbox" type="checkbox">
+                                        <input id="checkbox3" class="checkbox one" type="checkbox">
                                         <label for="checkbox3" class="check-title">Lorem ipsum</label>
                                     </div>
                                 </div>
@@ -184,15 +186,15 @@
                                     <p class="subtitle">Lorem</p>
                                     <button class="selectall">Select all</button>
                                     <div class="check">
-                                        <input id="checkbox4" class="checkbox" type="checkbox">
+                                        <input id="checkbox4" class="checkbox two" type="checkbox">
                                         <label for="checkbox4" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox5" class="checkbox" type="checkbox">
+                                        <input id="checkbox5" class="checkbox two" type="checkbox">
                                         <label for="checkbox5" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox6" class="checkbox" type="checkbox">
+                                        <input id="checkbox6" class="checkbox two" type="checkbox">
                                         <label for="checkbox6" class="check-title">Lorem ipsum</label>
                                     </div>
                                 </div>
@@ -200,31 +202,23 @@
                                     <p class="subtitle">Lorem</p>
                                     <button class="selectall">Select all</button>
                                     <div class="check">
-                                        <input id="checkbox7" class="checkbox" type="checkbox">
+                                        <input id="checkbox7" class="checkbox three" type="checkbox">
                                         <label for="checkbox7" class="check-title">Lorem ipsum</label>
-                                    </div>
-                                    <div class="check">
-                                        <input id="checkbox8" class="checkbox" type="checkbox">
-                                        <label for="checkbox8" class="check-title">Lorem ipsum</label>
-                                    </div>
-                                    <div class="check">
-                                        <input id="checkbox9" class="checkbox" type="checkbox">
-                                        <label for="checkbox9 class=" check-title">Lorem ipsum</label>
                                     </div>
                                 </div>
                                 <div class="select-box">
                                     <p class="subtitle">Lorem</p>
                                     <button class="selectall">Select all</button>
                                     <div class="check">
-                                        <input id="checkbox10" class="checkbox" type="checkbox">
+                                        <input id="checkbox10" class="checkbox four" type="checkbox">
                                         <label for="checkbox10" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox11" class="checkbox" type="checkbox">
+                                        <input id="checkbox11" class="checkbox four" type="checkbox">
                                         <label for="checkbox11" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox12" class="checkbox" type="checkbox">
+                                        <input id="checkbox12" class="checkbox four" type="checkbox">
                                         <label for="checkbox12" class="check-title">Lorem ipsum</label>
                                     </div>
                                 </div>
@@ -232,47 +226,39 @@
                                     <p class="subtitle">Lorem</p>
                                     <button class="selectall">Select all</button>
                                     <div class="check">
-                                        <input id="checkbox13" class="checkbox" type="checkbox">
+                                        <input id="checkbox13" class="checkbox five" type="checkbox">
                                         <label for="checkbox13" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox14" class="checkbox" type="checkbox">
+                                        <input id="checkbox14" class="checkbox five" type="checkbox">
                                         <label for="checkbox14" class="check-title">Lorem ipsum</label>
-                                    </div>
-                                    <div class="check">
-                                        <input id="checkbox15" class="checkbox" type="checkbox">
-                                        <label for="checkbox15" class="check-title">Lorem ipsum</label>
                                     </div>
                                 </div>
                                 <div class="select-box">
                                     <p class="subtitle">Lorem</p>
                                     <button class="selectall">Select all</button>
                                     <div class="check">
-                                        <input id="checkbox16" class="checkbox" type="checkbox">
+                                        <input id="checkbox16" class="checkbox six" type="checkbox">
                                         <label for="checkbox16" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox17" class="checkbox" type="checkbox">
+                                        <input id="checkbox17" class="checkbox six" type="checkbox">
                                         <label for="checkbox17" class="check-title">Lorem ipsum</label>
-                                    </div>
-                                    <div class="check">
-                                        <input id="checkbox18" class="checkbox" type="checkbox">
-                                        <label for="checkbox18" class="check-title">Lorem ipsum</label>
                                     </div>
                                 </div>
                                 <div class="select-box">
                                     <p class="subtitle">Lorem</p>
                                     <button class="selectall">Select all</button>
                                     <div class="check">
-                                        <input id="checkbox19" class="checkbox" type="checkbox">
+                                        <input id="checkbox19" class="checkbox seven" type="checkbox">
                                         <label for="checkbox19" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox20" class="checkbox" type="checkbox">
+                                        <input id="checkbox20" class="checkbox seven" type="checkbox">
                                         <label for="checkbox20" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox21" class="checkbox" type="checkbox">
+                                        <input id="checkbox21" class="checkbox seven" type="checkbox">
                                         <label for="checkbox21" class="check-title">Lorem ipsum</label>
                                     </div>
                                 </div>
@@ -280,34 +266,25 @@
                                     <p class="subtitle">Lorem</p>
                                     <button class="selectall">Select all</button>
                                     <div class="check">
-                                        <input id="checkbox22" class="checkbox" type="checkbox">
+                                        <input id="checkbox22" class="checkbox eight" type="checkbox">
                                         <label for="checkbox22" class="check-title">Lorem ipsum</label>
                                     </div>
                                     <div class="check">
-                                        <input id="checkbox23" class="checkbox" type="checkbox">
+                                        <input id="checkbox23" class="checkbox eight" type="checkbox">
                                         <label for="checkbox23" class="check-title">Lorem ipsum</label>
-                                    </div>
-                                    <div class="check">
-                                        <input id="checkbox24" class="checkbox" type="checkbox">
-                                        <label for="checkbox24" class="check-title">Lorem ipsum</label>
                                     </div>
                                 </div>
                                 <div class="select-box">
                                     <p class="subtitle">Lorem</p>
                                     <button class="selectall">Select all</button>
                                     <div class="check">
-                                        <input id="checkbox25" class="checkbox" type="checkbox">
+                                        <input id="checkbox25" class="checkbox nine" type="checkbox">
                                         <label for="checkbox25" class="check-title">Lorem ipsum</label>
                                     </div>
-                                    <div class="check">
-                                        <input id="checkbox26" class="checkbox" type="checkbox">
-                                        <label for="checkbox26" class="check-title">Lorem ipsum</label>
-                                    </div>
-                                    <div class="check">
-                                        <input id="checkbox27" class="checkbox" type="checkbox">
-                                        <label for="checkbox27" class="check-title">Lorem ipsum</label>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="popup-buttonbox">
+                                <button class="popup-ok" type="submit" form="none">OK</button>
                             </div>
                         </div>
                     </div>
@@ -332,4 +309,5 @@
     </footer>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

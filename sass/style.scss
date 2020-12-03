@@ -157,7 +157,12 @@ input {
 
 input[type=text] {
     padding-left: 10px;
+    padding-right: 10px;
     line-height: 46px;
+}
+
+input[type=date] {
+    padding: 15px;
 }
 
 input:focus {
@@ -165,9 +170,9 @@ input:focus {
     color: black;
 }
 
-input:invalid+label {
-    border: 1px solid #d91e19;
-    color: #d91e19;
+input[type=checkbox]:disabled {
+    border-color: #a8a8a7;
+    color: #a8a8a7;
 }
 
 label {
@@ -176,7 +181,7 @@ label {
     margin-top: 45px;
 }
 
-#input5 {
+#input5, #input6 {
     padding: 15px;
 }
 
@@ -212,15 +217,13 @@ label {
     margin-top: 45px;
     margin-bottom: 45px;
 
-    .checkbox:disabled {
-        background-color: #ffffff;
-        border-color: #dadada;
-    }
+    
 
     .check-title {
         margin: 15px;
     }
 }
+
 
 .check {
     display: flex;
@@ -236,10 +239,18 @@ label {
         border-radius: 0;
         appearance: none;
     }
-
+    
     .checkbox:checked {
-        border: 1px solid #000000;
         background-color: #000000;
+    }
+
+    .checkbox:checked:after {
+        content: '\2714';
+        position: relative;
+        top: 0px;
+        left: 7px;
+        font-size: 2rem;
+        color: #fff;
     }
 }
 
@@ -462,6 +473,18 @@ footer {
             font-size: 1.4rem;
             font-weight: bold;
             background-color: #fff;
+        }
+    }
+    .popup-buttonbox {
+        display: flex;
+        justify-content: flex-end;
+
+        .popup-ok {
+            @include blackBtn;
+            align-self: flex-end;
+            height: 40px;
+            width: 170px;
+            border: none;
         }
     }
 }
